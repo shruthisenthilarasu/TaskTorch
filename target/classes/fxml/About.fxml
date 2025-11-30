@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane xmlns="http://javafx.com/javafx" 
+            xmlns:fx="http://javafx.com/fxml" 
+            fx:controller="com.tasktorch.controllers.AboutController"
+            fitToWidth="true">
+    
+    <VBox spacing="20" styleClass="vbox-container" style="-fx-padding: 30;">
+        <Label text="About TaskTorch" styleClass="about-title"/>
+        
+        <Label text="Welcome to TaskTorch!" styleClass="about-section"/>
+        <Label text="TaskTorch is a homework and deadline organizer designed to help you stay on top of your assignments and tasks." 
+               styleClass="about-text"/>
+        
+        <Label text="Getting Started" styleClass="about-section"/>
+        <Label text="Adding Tasks" styleClass="about-subtitle"/>
+        <Label text="1. Click the 'Add Task' button from the Dashboard or Calendar view&#10;2. Enter the task title, due date, class name, and any notes&#10;3. Set the priority (Low, Medium, High) and status&#10;4. Click 'Save' to add the task" 
+               styleClass="about-text"/>
+        
+        <Label text="Viewing Tasks" styleClass="about-subtitle"/>
+        <Label text="• Dashboard: See all upcoming tasks in a list view&#10;• Calendar: View tasks organized by week and day&#10;• Click on any task to view details or edit" 
+               styleClass="about-text"/>
+        
+        <Label text="Managing Tasks" styleClass="about-subtitle"/>
+        <Label text="• Click once on a task to toggle its status (Pending → In Progress → Complete)&#10;• Double-click a task to edit it&#10;• Status indicators: Red (Pending), Yellow (In Progress), Green (Complete)" 
+               styleClass="about-text"/>
+        
+        <Label text="Settings" styleClass="about-subtitle"/>
+        <Label text="• Change theme (Light/Dark mode)&#10;• Enable daily reminders&#10;• Configure reminder days before due date&#10;• Connect Google Calendar for automatic sync" 
+               styleClass="about-text"/>
+        
+        <Label text="Tips" styleClass="about-section"/>
+        <Label text="• Keep your tasks organized by using consistent class names&#10;• Set priorities to focus on important tasks first&#10;• Use the calendar view to see your weekly schedule at a glance&#10;• Enable Google Calendar sync to see tasks in your calendar app" 
+               styleClass="about-text"/>
+        
+        <Button text="Close" onAction="#handleClose" styleClass="button-primary" style="-fx-min-width: 100;"/>
+    </VBox>
+    
+</ScrollPane>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.tasktorch.controllers.LoginController"
+      spacing="20" alignment="CENTER"
+      styleClass="vbox-container"
+      style="-fx-padding: 40;">
+    
+    <Label text="TaskTorch" styleClass="header-title"/>
+    <Label text="Welcome! Please login or create an account" styleClass="subtitle"/>
+    
+    <VBox spacing="15" alignment="CENTER" style="-fx-min-width: 300;">
+        <VBox spacing="5">
+            <Label text="Username:" styleClass="label-header"/>
+            <TextField fx:id="usernameField" promptText="Enter username" style="-fx-min-width: 250;"/>
+        </VBox>
+        
+        <VBox spacing="5">
+            <Label text="Password:" styleClass="label-header"/>
+            <PasswordField fx:id="passwordField" promptText="Enter password" style="-fx-min-width: 250;"/>
+        </VBox>
+        
+        <Label fx:id="errorLabel" style="-fx-text-fill: #E91E63; -fx-wrap-text: true; -fx-max-width: 250;" visible="false"/>
+        
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="loginButton" text="Login" styleClass="button-primary" style="-fx-min-width: 100;"/>
+            <Button fx:id="signupButton" text="Sign Up" styleClass="button" style="-fx-min-width: 100;"/>
+        </HBox>
+    </VBox>
+    
+</VBox>
+

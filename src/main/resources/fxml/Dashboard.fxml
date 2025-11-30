@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.tasktorch.controllers.DashboardController"
+      spacing="20" styleClass="vbox-container"
+      style="-fx-padding: 20;">
+    
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="TaskTorch Dashboard" styleClass="header-title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="aboutButton" text="About" styleClass="button"/>
+        <Button fx:id="settingsButton" text="Settings" styleClass="button"/>
+        <Button fx:id="calendarButton" text="Calendar View" styleClass="button-primary"/>
+    </HBox>
+    
+    <Separator/>
+    
+    <Label text="Upcoming Tasks" styleClass="section-title"/>
+    
+    <ListView fx:id="upcomingTasksList" styleClass="task-list" style="-fx-min-height: 400;"/>
+    
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="addTaskButton" text="Add Task" styleClass="button-primary"/>
+    </HBox>
+    
+</VBox>
+

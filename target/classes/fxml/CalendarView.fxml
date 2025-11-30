@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.tasktorch.controllers.CalendarController"
+      spacing="20" styleClass="vbox-container"
+      style="-fx-padding: 20;">
+    
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Calendar View" styleClass="header-title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="aboutButton" text="About" styleClass="button"/>
+        <Button fx:id="settingsButton" text="Settings" styleClass="button"/>
+        <Button fx:id="dashboardButton" text="Dashboard" styleClass="button-primary"/>
+    </HBox>
+    
+    <Separator/>
+    
+    <HBox spacing="20" alignment="CENTER">
+        <Button fx:id="prevWeekButton" text="← Previous Week" styleClass="button"/>
+        <Label fx:id="weekLabel" styleClass="subtitle"/>
+        <Button fx:id="nextWeekButton" text="Next Week →" styleClass="button"/>
+    </HBox>
+    
+    <VBox fx:id="calendarGrid" styleClass="vbox-container" spacing="10"/>
+    
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="addTaskButton" text="Add Task" styleClass="button-primary"/>
+    </HBox>
+    
+</VBox>
+

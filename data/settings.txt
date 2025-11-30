@@ -1,0 +1,4 @@
+theme=DARK
+dailyReminder=false
+remindDaysBeforeDue=1
+googleCalendarEnabled=false

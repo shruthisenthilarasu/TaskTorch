@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.tasktorch.controllers.SettingsController"
+      spacing="15" styleClass="vbox-container"
+      >
+    
+    <Label text="Settings" styleClass="section-title"/>
+    
+    <GridPane hgap="10" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints minWidth="200"/>
+            <ColumnConstraints hgrow="ALWAYS" minWidth="250"/>
+        </columnConstraints>
+        
+        <Label text="Theme:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <ComboBox fx:id="themeComboBox" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        
+        <Label text="Daily Reminder:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <CheckBox fx:id="dailyReminderCheckBox" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        
+        <Label text="Remind Days Before Due:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Spinner fx:id="remindDaysSpinner" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    </GridPane>
+    
+    <Separator/>
+    
+    <Label text="Google Calendar Integration" styleClass="section-title"/>
+    <VBox spacing="10">
+        <Label fx:id="googleCalendarStatusLabel" text="Status: Not Connected"/>
+        <HBox spacing="10">
+            <Button fx:id="connectGoogleCalendarButton" text="Connect Google Calendar" styleClass="button-primary"/>
+            <Button fx:id="disconnectGoogleCalendarButton" text="Disconnect" styleClass="button" visible="false"/>
+        </HBox>
+        <Label text="Note: Place your credentials.json file in the data/ directory to enable Google Calendar sync." 
+               style="-fx-font-size: 11px; -fx-text-fill: #666; -fx-wrap-text: true;"/>
+    </VBox>
+    
+    <HBox spacing="10" alignment="CENTER_RIGHT" styleClass="hbox-container">
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="cancelButton" text="Cancel"/>
+        <Button fx:id="saveButton" text="Save" styleClass="button-primary"/>
+    </HBox>
+    
+</VBox>
+

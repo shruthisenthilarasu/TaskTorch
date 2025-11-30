@@ -1,0 +1,183 @@
+/* TaskTorch Dark Theme - Purple, Green accents on Dark background */
+
+.root {
+    -fx-background-color: #1E1E1E; /* Dark background */
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Header Styles */
+.header-title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #9C27B0; /* Bright purple */
+    -fx-padding: 10px;
+}
+
+.section-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #9C27B0; /* Bright purple */
+    -fx-padding: 5px;
+}
+
+.subtitle {
+    -fx-font-size: 16px;
+    -fx-text-fill: #4CAF50; /* Green */
+    -fx-padding: 5px;
+}
+
+.label-header {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #CE93D8; /* Light purple */
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: #4A148C; /* Dark purple */
+    -fx-text-fill: #CE93D8; /* Light purple */
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #6A1B9A; /* Medium purple */
+}
+
+.button-primary {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button-primary:hover {
+    -fx-background-color: #66BB6A; /* Lighter green */
+}
+
+.button-danger {
+    -fx-background-color: #E91E63; /* Pink/Red */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button-danger:hover {
+    -fx-background-color: #F06292; /* Lighter pink */
+}
+
+/* Container Styles */
+.vbox-container {
+    -fx-background-color: #1E1E1E; /* Dark */
+    -fx-padding: 20px;
+}
+
+.hbox-container {
+    -fx-padding: 10px;
+}
+
+/* List View Styles */
+.task-list {
+    -fx-background-color: #2D2D2D; /* Dark gray */
+    -fx-border-color: #4A148C; /* Dark purple */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.task-list .list-cell {
+    -fx-padding: 10px;
+    -fx-background-color: #2D2D2D; /* Dark gray */
+    -fx-text-fill: #E0E0E0; /* Light text */
+}
+
+.task-list .list-cell:hover {
+    -fx-background-color: #3D3D3D; /* Lighter gray */
+}
+
+.task-list .list-cell:selected {
+    -fx-background-color: #4A148C; /* Dark purple */
+    -fx-text-fill: white;
+}
+
+/* Task Status Styles */
+.task-completed {
+    -fx-text-fill: #757575; /* Medium gray */
+    -fx-strikethrough: true;
+    -fx-opacity: 0.7;
+}
+
+/* Status Dots */
+.status-dot-pending {
+    -fx-fill: #F44336; /* Red */
+}
+
+.status-dot-in-progress {
+    -fx-fill: #FFC107; /* Yellow */
+}
+
+.status-dot-completed {
+    -fx-fill: #4CAF50; /* Green */
+}
+
+/* About Page Styles */
+.about-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #9C27B0; /* Bright purple */
+}
+
+.about-section {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #9C27B0; /* Bright purple */
+    -fx-padding: 10px 0px 5px 0px;
+}
+
+.about-subtitle {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4CAF50; /* Green */
+    -fx-padding: 5px 0px;
+}
+
+.about-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #E0E0E0; /* Light text */
+    -fx-wrap-text: true;
+    -fx-padding: 5px 0px;
+}
+
+/* Calendar Styles */
+.calendar-day {
+    -fx-background-color: #2D2D2D; /* Dark gray */
+    -fx-border-color: #4A148C; /* Dark purple */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+    -fx-min-height: 100px;
+}
+
+/* Text Field and ComboBox Styles */
+.text-field, .combo-box, .date-picker, .text-area {
+    -fx-background-color: #2D2D2D; /* Dark gray */
+    -fx-text-fill: #E0E0E0; /* Light text */
+    -fx-border-color: #4A148C; /* Dark purple */
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+}
+
+.text-field:focused, .combo-box:focused, .date-picker:focused {
+    -fx-border-color: #4CAF50; /* Green */
+    -fx-border-width: 2px;
+}
+
+.label {
+    -fx-text-fill: #E0E0E0; /* Light text */
+}
+

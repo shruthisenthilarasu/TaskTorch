@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.tasktorch.controllers.TaskController"
+      spacing="15" styleClass="vbox-container"
+      style="-fx-padding: 20;">
+    
+    <Label text="Add/Edit Task" styleClass="section-title"/>
+    
+    <GridPane hgap="10" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints minWidth="100"/>
+            <ColumnConstraints hgrow="ALWAYS" minWidth="300"/>
+        </columnConstraints>
+        
+        <Label text="Title:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="titleField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        
+        <Label text="Due Date:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <DatePicker fx:id="dueDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        
+        <Label text="Class:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <ComboBox fx:id="classNameComboBox" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        
+        <Label text="Priority:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <ComboBox fx:id="priorityComboBox" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        
+        <Label text="Status:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <ComboBox fx:id="statusComboBox" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        
+        <Label text="Notes:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <TextArea fx:id="notesArea" GridPane.columnIndex="1" GridPane.rowIndex="5" style="-fx-min-height: 100;"/>
+    </GridPane>
+    
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="deleteButton" text="Delete" styleClass="button-danger"/>
+        <Button fx:id="cancelButton" text="Cancel"/>
+        <Button fx:id="saveButton" text="Save" styleClass="button-primary"/>
+    </HBox>
+    
+</VBox>
+
